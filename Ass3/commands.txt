@@ -1,0 +1,12 @@
+
+set MPJ_HOME=C:\Users\aj538\Downloads\mpj-v0_44\mpj-v0_44
+
+set PATH=%MPJ_HOME%\bin;%PATH%
+cd Assignment 4
+
+
+javac -cp "%MPJ_HOME%\lib\mpj.jar" SumArrayMPI.java
+
+mpjrun -np 4 SumArrayMPI
+
+mpjrun -np 3 SumArrayMPI
